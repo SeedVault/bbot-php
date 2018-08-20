@@ -11,6 +11,45 @@ See [the Wiki](https://github.com/SeedVault/SEEDtoken-IP/wiki) for more informat
 ## Version
 This PHP engine is a proof of concept of Flow 1.0 and Flow 2.0. The current repository works with .Flow 1.0. A newer version will be released soon. 
 
+## Features
+
+- Runs .Bot/.Flow v1.0 with plugin support for Text, Buttons, Media cards, Forms, Send email, Variable storing and comparisson operators, custom API calls.
+- Template engine support for text output compatible with Twig. Added weather report function.
+- Intent match plugins support for regular expressions, ChatScript patterns and Microsoft's Cognitive Service Luis.
+- Loads .Bot and .Flow from URIs file and http.
+
+## Included
+
+- RESTful web server implementation channel.
+- Web bot frontend for testing purposes.
+
+## Development setup
+
+Requeriments: 
+- Composer.
+- PHP 7.0 or higher.
+- MongoDB server.
+- ChatScript server (optional).
+
+Steps to install:
+```
+git clone https://github.com/SeedVault/bbot-php.git
+cd bbot-php
+composer install
+cp config.php-example config.php
+vim config.php
+```
+
+## To-do
+
+- Support .Flow v2.0 full specification.
+- Support .Bot v1.1.
+- Add plugins to support all .Flow v2.0 functions, filters and operators.
+- Add channels Telegram, Skype, Slack, Facebook, Signal, Kik and Twitter.
+- Add debug response with executed functions and its responses, matched paths and current node data.
+- Add commands for bot developer and channels to control bot flow and session.
+
+
 ## Disclaimer
 
 These files are made available to you on an as-is and restricted basis, and may only be redistributed or sold to any third party as expressly indicated in the Terms of Use for Seed Vault.

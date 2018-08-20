@@ -1,0 +1,5 @@
+/nbproject
+/vendor/
+config.php
+/src/BBot/Logs/*
+.DS_Store
