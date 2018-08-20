@@ -1,0 +1,32 @@
+<?php
+
+return
+        [
+            'plugins' => [
+                'ChatScriptPatternMatch', 'PlainTextEqMatch', 'RegexMatch', 'LuisIntentMatch',
+                'VariableEval', 'Text', 'Buttons', 'Media', 'SendEmail', 'ApiCall', 'Weather'
+            ],
+            'dotBot' => [
+                'uri' => 'http://domain/api/project/{id}/dotBot'
+            ],
+            'flows' => [
+                'uri' => 'http://domain/api/project/{id}/flows'
+            ],
+            'userData' => [
+                'uri' => 'mongodb://localhost:27017/bbot',
+            ],
+            'chatscriptServer' => [
+                'host' => 'localhost',
+                'port' => 1024,
+                'botId' => '',
+                'userId' => 'bbot'
+            ],
+            'msCognitiveAPI' => [
+                'domainZone' => 'westus.api.cognitive.microsoft.com',
+                'subscriptionKey' => ''
+            ],
+            'accuweatherAPI' => [
+                'apikey' => ''
+            ]
+];
+
