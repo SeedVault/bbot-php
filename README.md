@@ -24,37 +24,6 @@ SEED democratizes AI by offering an open and independent alternative to the mono
 - [.Bot description](https://github.com/SeedVault/bot) to see the format of the configuration file used by BBOT to create bots.
 
 
-# Build Development Setup 
-
-## Backend PHP code
-
-Create backend/.env file (it's excluded from the git repo). Use .env-example as source.\
-make sure APP_ENV=local
-
-```bash
-# Docroot is at backend/public. You can make it work just by running cli php (or your webserver of choice)
-# Make sure to listen to port 8000 in dev instance as frontend webpack will send api requests to it
-apt-get update && apt-get install php7.0 php7.0-curl php7.0-json php7.0-mbstring php7.0-mcrypt php7.0-mysql php-apcu 
-cd backend
-composer install
-vim .env
-php -S localhost:8000 -t public
-```
-
-
-## Frontend 
-
-Frontend is bundled with Webpack. It has it's own webserver to provide features like Hot-loading.
-This builds and run the application as a development instance and sets the test Hadron web channel's URI
-
-```bash
-# To make webpack build dev files and start webpack webserver. 
-# This will start listening by default to http://localhost:8080
-cd frontend
-npm ci
-BOTANIC_ENV=local HADRON_URI="https://domain/dev_author/hadron.php" npm run dev
-```
-
 ### Connect
 Feel free to throw general questions regarding SEED and what to expect in the following months here on GitHub (or GitLab) at  @consiliera (gaby@seedtoken.io) :sunny: 
 
