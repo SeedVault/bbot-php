@@ -33,7 +33,7 @@ Requeriments:
 
 Steps to install:
 ```
-git clone https://github.com/SeedVault/bbot-php.git
+git clone https://github.com/botanicinc/bbot-php.git
 cd bbot-php
 composer install
 cp config.php-example config.php
